@@ -16,7 +16,12 @@ This project simulates network congestion using **ns-3** and predicts congestion
 - **GitHub** (Code hosting & version control)  
 
 ---
+## 📊 Simulation Output  
 
-## 📂 Project Structure  
-AI-Network-Congestion-Prediction/ ├── network_congestion.cc # ns-3 Simulation Code ├── analyze_congestion.py # AI Congestion Prediction Code ├── README.md # Documentation
+Here’s the output of the **5G vs. Wi-Fi Performance Simulation**:
+
+### **📌 Console Output**
+![Screenshot from 2025-02-12 20-34-15](https://github.com/user-attachments/assets/d291083f-8064-4bb6-a8ec-a502cb509d89)
+
+
 
