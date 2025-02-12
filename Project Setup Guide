@@ -1,0 +1,80 @@
+
+
+✅ Step 1: Create the README File in Your GitHub Repository
+
+cd ~/Documents/workshop/ns3-5G-vs-WiFi-Simulation
+nano README.md
+
+📌 Copy and Paste the Content Below:
+
+# 📡 ns-3 5G vs. Wi-Fi Performance Simulation 🚀  
+
+## 📌 Project Overview  
+This project **compares the performance of 5G (mmWave) vs. Wi-Fi (802.11ac)** using **ns-3**.  
+
+- **Simulates a network with 2 devices (client & server)**  
+- **Tests network performance under different conditions**  
+- **Analyzes latency, throughput, and packet loss for 5G & Wi-Fi**  
+
+---
+
+## 🛠️ Technologies Used  
+- **ns-3** (Network Simulation)  
+- **C++** (Traffic generation & monitoring)  
+- **Python** (Optional: Data visualization & AI analysis)  
+- **GitHub** (Version control)  
+
+---
+
+## 📂 Project Structure  
+ns3-5G-vs-WiFi-Simulation/ ├── network_comparison.cc # ns-3 Simulation Code ├── output.txt # Simulation Output ├── README.md # Documentation ├── requirements.txt # Dependencies List ├── ns3_output.png 
+
+
+---
+
+## 🚀 How to Set Up the Project  
+
+### **1️⃣ Install Git & ns-3 Dependencies**  
+Run the following command to install the required dependencies:  
+```bash
+sudo apt update && sudo apt install -y git gcc g++ cmake python3 python3-venv
+2️⃣ Clone This Repository
+
+cd ~/Documents/workshop
+git clone https://github.com/atharvakanchan25/ns3-5G-vs-WiFi-Simulation.git
+cd ns3-5G-vs-WiFi-Simulation
+3️⃣ Set Up a Virtual Environment (Optional for Python Users)
+If you plan to analyze results using Python, create a virtual environment:
+
+
+python3 -m venv ns3
+source ns3/bin/activate
+pip install -r requirements.txt
+4️⃣ Install and Build ns-3
+Since ns-3 is required for simulation, install it:
+
+
+cd ~/Documents/workshop
+git clone https://gitlab.com/nsnam/ns-3-dev.git ns-3
+cd ns-3
+mkdir build
+cd build
+cmake ..
+cmake --build .
+
+5️⃣ Copy the Simulation File to ns-3
+
+cp ~/Documents/workshop/ns3-5G-vs-WiFi-Simulation/network_comparison.cc ~/Documents/workshop/ns-3/scratch/
+6️⃣ Run the Simulation
+
+
+cd ~/Documents/workshop/ns-3
+./ns3 build
+./ns3 run scratch/network_comparison | tee ~/Documents/workshop/ns3-5G-vs-WiFi-Simulation/output.txt
+
+✅ This generates network performance data comparing 5G vs. Wi-Fi.
+
+📊 Simulation Output
+📌 Console Output
+
+$(cat output.txt)
