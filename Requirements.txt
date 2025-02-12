@@ -1,0 +1,22 @@
+# ns-3 dependencies (C++ based)
+gcc
+g++
+cmake
+git
+python3
+
+
+# ns-3 dependencies
+gcc
+g++
+cmake
+git
+python3
+
+# Python dependencies for analysis & visualization
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+
